@@ -15,7 +15,7 @@
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="Interval Timer App - Ultimate HIIT & Tabata Workout Timer">
     <meta property="og:description" content="Transform your fitness with our free HIIT & Tabata interval timer app. Professional workout tracking and customizable routines.">
-    <meta property="og:image" content="https://www.intervaltimer.us/app-preview.jpg">
+    <meta property="og:image" content="https://www.intervaltimer.us/app-icon.png">
     <meta property="og:url" content="https://www.intervaltimer.us/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Interval Timer App">
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Interval Timer App - Ultimate HIIT & Tabata Workout Timer">
     <meta name="twitter:description" content="Transform your fitness with our free HIIT & Tabata interval timer app.">
-    <meta name="twitter:image" content="https://www.intervaltimer.us/app-preview.jpg">
+    <meta name="twitter:image" content="https://www.intervaltimer.us/app-icon.png">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -91,10 +91,19 @@
         }
         
         .logo {
+            display: flex;
+            align-items: center;
             font-size: 1.8rem;
             font-weight: 700;
             color: #667eea;
             text-decoration: none;
+            gap: 0.5rem;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
         }
         
         .nav-links {
@@ -371,7 +380,10 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <a href="#" class="logo">⏱️ Interval Timer</a>
+            <a href="#" class="logo">
+                <img src="app-icon.png" alt="Interval Timer" class="logo-icon">
+                Interval Timer
+            </a>
             <ul class="nav-links">
                 <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#features">Features</a></li>
