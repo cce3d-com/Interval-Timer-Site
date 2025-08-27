@@ -290,6 +290,30 @@
             color: rgba(255, 255, 255, 0.7);
         }
         
+        .screenshot-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .screenshot-image:hover {
+            transform: translateY(-10px);
+        }
+        
+        .screenshot-container {
+            text-align: center;
+        }
+        
+        .screenshot-title {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+        }
+        
         /* Comparison Section */
         .comparison-table {
             background: white;
@@ -519,21 +543,21 @@
             <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Beautiful, intuitive design that keeps you motivated and focused</p>
             
             <div class="screenshot-grid">
-                <div class="screenshot-placeholder">
-                    📱 Main Timer Screen
-                    <br><small>Upload your app screenshot here</small>
+                <div class="screenshot-container">
+                    <img src="main.PNG" alt="Main Timer Screen" class="screenshot-image">
+                    <div class="screenshot-title">Main Timer Screen</div>
                 </div>
-                <div class="screenshot-placeholder">
-                    📊 Workout History
-                    <br><small>Upload your app screenshot here</small>
+                <div class="screenshot-container">
+                    <img src="History.PNG" alt="Workout History" class="screenshot-image">
+                    <div class="screenshot-title">Workout History</div>
                 </div>
-                <div class="screenshot-placeholder">
-                    ⚙️ Custom Routines
-                    <br><small>Upload your app screenshot here</small>
+                <div class="screenshot-container">
+                    <img src="Routines.PNG" alt="Custom Routines" class="screenshot-image">
+                    <div class="screenshot-title">Custom Routines</div>
                 </div>
-                <div class="screenshot-placeholder">
-                    🎨 Settings & Themes
-                    <br><small>Upload your app screenshot here</small>
+                <div class="screenshot-container">
+                    <img src="Settings.PNG" alt="Settings & Themes" class="screenshot-image">
+                    <div class="screenshot-title">Settings & Themes</div>
                 </div>
             </div>
         </div>
